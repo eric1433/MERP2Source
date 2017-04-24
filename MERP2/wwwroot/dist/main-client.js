@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "fc521fd52014c55efa0e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a1f13dac8816609dfb1e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -27907,7 +27907,7 @@ module.exports = "<h1>pubmat08</h1>\r\n\r\n\r\n<command-button [menuType]=\"scop
 /* 268 */
 /***/ (function(module, exports) {
 
-module.exports = "<table>\r\n    <tr>\r\n        <td>系統代碼</td>\r\n        <td>\r\n            <input type=\"text\" ng-model=\"condition.SYS_NO\" erp-char-width-input-display=\"[10,20]\">\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td>系統名稱123</td>\r\n        <td>\r\n            <input type=\"text\" ng-model=\"condition.SYS_NM\" erp-char-width-input-display=\"[20,20]\">\r\n        </td>\r\n    </tr>\r\n</table>";
+module.exports = "<table>\r\n    <tr>\r\n        <td>系統代碼</td>\r\n        <td>\r\n            <input type=\"text\" ng-model=\"condition.SYS_NO\" erp-char-width-input-display=\"[10,20]\">\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td>系統名稱</td>\r\n        <td>\r\n            <input type=\"text\" ng-model=\"condition.SYS_NM\" erp-char-width-input-display=\"[20,20]\">\r\n        </td>\r\n    </tr>\r\n</table>";
 
 /***/ }),
 /* 269 */
