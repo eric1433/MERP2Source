@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MERP2", "MERP2\MERP2.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model.VAN", "Model.VAN\Model.VAN.csproj", "{F7783B8B-6B03-4C20-8C0E-6027E48CB28E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSoft", "SSoftLib\SSoft.csproj", "{A70EA088-4BC8-4E5F-AAC7-9CD0174ADA3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F7783B8B-6B03-4C20-8C0E-6027E48CB28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7783B8B-6B03-4C20-8C0E-6027E48CB28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7783B8B-6B03-4C20-8C0E-6027E48CB28E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A70EA088-4BC8-4E5F-AAC7-9CD0174ADA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70EA088-4BC8-4E5F-AAC7-9CD0174ADA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70EA088-4BC8-4E5F-AAC7-9CD0174ADA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70EA088-4BC8-4E5F-AAC7-9CD0174ADA3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
