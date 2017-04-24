@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MERP2", "MERP2\MERP2.csproj", "{33E45B5D-0AAD-418C-B09F-2B56A0C8AF1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MERP2", "MERP2.csproj", "{33E45B5D-0AAD-418C-B09F-2B56A0C8AF1A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model.VAN", "Model.VAN\Model.VAN.csproj", "{F7783B8B-6B03-4C20-8C0E-6027E48CB28E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model.VAN", "..\Model.VAN\Model.VAN.csproj", "{F7783B8B-6B03-4C20-8C0E-6027E48CB28E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSoft", "SSoftLib\SSoft.csproj", "{A70EA088-4BC8-4E5F-AAC7-9CD0174ADA3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSoft", "..\SSoftLib\SSoft.csproj", "{A70EA088-4BC8-4E5F-AAC7-9CD0174ADA3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
