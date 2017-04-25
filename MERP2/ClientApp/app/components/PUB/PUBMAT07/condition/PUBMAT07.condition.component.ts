@@ -2,8 +2,8 @@
 
 @Component({
     selector: 'pubmat07-codition',
-    templateUrl: './PUBMAT07.condition.component.html',
-    styleUrls: ['./PUBMAT07.condition.component.css']
+    templateUrl: './pubmat07.condition.component.html',
+    styleUrls: ['./pubmat07.condition.component.css']
 })
 export class PUBMAT07ConditionComponent {
 }

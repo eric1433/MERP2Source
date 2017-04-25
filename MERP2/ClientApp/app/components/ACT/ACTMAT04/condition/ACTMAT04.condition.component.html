@@ -1,0 +1,16 @@
+﻿<table>
+    <tr>
+        <td>傳票別</td>
+        <td>
+            <input id="VCH_TY" type="text" ng-model="condition.AVCH_TY" erp-char-width-input-display="[4,5]"><select ng-model="condition.AVCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_AT" erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>傳票編號</td>
+        <td>
+            <input id="AVCH_NO" type="text" ng-model="condition.AVCH_NO" erp-char-width-input-display="[20,20]">
+        </td>
+    </tr>
+</table>

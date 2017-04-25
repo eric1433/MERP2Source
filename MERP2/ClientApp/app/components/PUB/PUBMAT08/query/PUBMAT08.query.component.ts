@@ -2,8 +2,8 @@
 
 @Component({
     selector: 'pubmat08-query',
-    templateUrl: './PUBMAT08.query.component.html',
-    styleUrls: ['./PUBMAT08.query.component.css']
+    templateUrl: './pubmat08.query.component.html',
+    styleUrls: ['./pubmat08.query.component.css']
 })
 export class PUBMAT08QueryComponent {
 }

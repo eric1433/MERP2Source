@@ -11,8 +11,8 @@ import { MaintainBase } from '../../shared/system/maintainBase.class';
 
 @Component({
     selector: 'pubmat08',
-    templateUrl: './PUBMAT08.component.html',
-    styleUrls: ['./PUBMAT08.component.css']
+    templateUrl: './pubmat08.component.html',
+    styleUrls: ['./pubmat08.component.css']
 })
 export class PUBMAT08Component extends  MaintainBase {    
 

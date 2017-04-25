@@ -1,0 +1,368 @@
+﻿<table>
+    <tr>
+        <th>服務據點代號</th>
+        <td>
+            <input type="text" ng-model="model.SER_NO" erp-key erp-char-width-input-display="[10,18]">
+        </td>
+        <th>服務據點名稱</th>
+        <td>
+            <input type="text" ng-model="model.SER_NM" erp-char-width-input-display="[80,18]">
+        </td>
+        <th>服務據點簡稱</th>
+        <td>
+            <input type="text" ng-model="model.SHORT_NM" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>服務據點EIP對照</th>
+        <td>
+            <input type="text" ng-model="model.EIP_SER_NO" erp-char-width-input-display="[10,18]">
+        </td>
+        <!--<th>統一編號</th>
+        <td>
+            <input type="text" ng-model="model.UNIQUE_NO" erp-char-width-input-display="[20,18]">
+        </td>-->
+    </tr>
+    <!--<tr>
+        <th>郵遞區號</th>
+        <td>
+            <input type="text" ng-model="model.ZNO_ADDR" erp-char-width-input-display="[80,18]">
+        </td>
+        <th>地址</th>
+        <td>
+            <input type="text" ng-model="model.ADDR" erp-char-width-input-display="[80,18]">
+        </td>
+        <th>稅籍編號</th>
+        <td>
+            <input type="text" ng-model="model.TAXRGT_NO" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>負責人</th>
+        <td>
+            <input type="text" ng-model="model.PROPRIETOR" erp-char-width-input-display="[20,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>聯絡人</th>
+        <td>
+            <input type="text" ng-model="model.CONTACTER" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>電話</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>電話2</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO2" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>電話3</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO3" erp-char-width-input-display="[20,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>傳真</th>
+        <td>
+            <input type="text" ng-model="model.FAX_NO" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>銀行行號</th>
+        <td>
+            <input type="text" ng-model="model.BANK_NO" erp-char-width-input-display="[10,18]">
+        </td>
+        <th>銀行戶名</th>
+        <td>
+            <input type="text" ng-model="model.ACC_NM" erp-char-width-input-display="[80,18]">
+        </td>
+        <th>銀行帳號</th>
+        <td>
+            <input type="text" ng-model="model.ACC_NO" erp-char-width-input-display="[80,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>正哨時薪28天</th>
+        <td>
+            <input type="text" ng-model="model.NM_HR_SLY_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>正哨時薪29天</th>
+        <td>
+            <input type="text" ng-model="model.NM_HR_SLY_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>正哨時薪30天</th>
+        <td>
+            <input type="text" ng-model="model.NM_HR_SLY_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>正哨時薪31天</th>
+        <td>
+            <input type="text" ng-model="model.NM_HR_SLY_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>支援哨時薪28天</th>
+        <td>
+            <input type="text" ng-model="model.SP_HR_SLY_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>支援哨時薪29天</th>
+        <td>
+            <input type="text" ng-model="model.SP_HR_SLY_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>支援哨時薪30天</th>
+        <td>
+            <input type="text" ng-model="model.SP_HR_SLY_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>支援哨時薪31天</th>
+        <td>
+            <input type="text" ng-model="model.SP_HR_SLY_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>28天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>29天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>30天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>31天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>28天加班費率</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>29天加班費率</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>30天加班費率</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>31天加班費率</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>上層服務據點</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_SER_NO" dddw-templatedefstype="SERVE"  ng-model="model.U_SER_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="10">
+        </td>
+        <td colspan="4"></td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="4" style="width: 100%;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>-->
+</table>
+
+<table>
+    <tr>
+        <th>統一編號</th>
+        <td>
+            <input type="text" ng-model="model.UNIQUE_NO" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>稅籍編號</th>
+        <td>
+            <input type="text" ng-model="model.TAXRGT_NO" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>負責人</th>
+        <td>
+            <input type="text" ng-model="model.PROPRIETOR" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>聯絡人</th>
+        <td>
+            <input type="text" ng-model="model.CONTACTER" erp-char-width-input-display="[20,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>電話</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>電話2</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO2" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>電話3</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO3" erp-char-width-input-display="[20,18]">
+        </td>
+        <th>傳真</th>
+        <td>
+            <input type="text" ng-model="model.FAX_NO" erp-char-width-input-display="[20,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>郵遞區號</th>
+        <td>
+            <input type="text" ng-model="model.ZNO_ADDR" erp-char-width-input-display="[80,18]">
+        </td>
+        <th>地址</th>
+        <td>
+            <input type="text" ng-model="model.ADDR" erp-char-width-input-display="[80,18]">
+        </td>
+        <th>上層服務據點</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_SER_NO" dddw-templatedefstype="SERVE" ng-model="model.U_SER_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="10">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>銀行行號</th>
+        <td>
+            <input type="text" ng-model="model.BANK_NO" erp-char-width-input-display="[10,18]">
+        </td>
+        <th>銀行戶名</th>
+        <td>
+            <input type="text" ng-model="model.ACC_NM" erp-char-width-input-display="[80,18]">
+        </td>
+        <th>銀行帳號</th>
+        <td>
+            <input type="text" ng-model="model.ACC_NO" erp-char-width-input-display="[80,18]">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>正哨時薪28天</th>
+        <td>
+            <input type="text" ng-model="model.NM_HR_SLY_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>正哨時薪29天</th>
+        <td>
+            <input type="text" ng-model="model.NM_HR_SLY_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>正哨時薪30天</th>
+        <td>
+            <input type="text" ng-model="model.NM_HR_SLY_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>正哨時薪31天</th>
+        <td>
+            <input type="text" ng-model="model.NM_HR_SLY_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>支援哨時薪28天</th>
+        <td>
+            <input type="text" ng-model="model.SP_HR_SLY_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>支援哨時薪29天</th>
+        <td>
+            <input type="text" ng-model="model.SP_HR_SLY_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>支援哨時薪30天</th>
+        <td>
+            <input type="text" ng-model="model.SP_HR_SLY_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>支援哨時薪31天</th>
+        <td>
+            <input type="text" ng-model="model.SP_HR_SLY_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>28天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_28" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>29天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_29" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>30天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_30" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>31天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_31" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>28天加班時薪</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>29天加班時薪</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>30天加班時薪</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>31天加班時薪</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>28天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>29天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>30天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>31天基本時數</th>
+        <td>
+            <input type="text" ng-model="model.BAS_HR_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+    <tr>
+        <th>28天加班時薪</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_28" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>29天加班時薪</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_29" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>30天加班時薪</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_30" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+        <th>31天加班時薪</th>
+        <td>
+            <input type="text" ng-model="model.OVT_RT_31" style="text-align:right;" decimals="3" decimal-point="." erp-char-width-input-display="[18,18]">
+        </td>
+    </tr>
+</table>
+
+<p-dataTable [value]="SERJOB">
+    <p-column field="NM_HR_SLY_28" header="正哨時薪28天"></p-column>
+    <p-column field="NM_HR_SLY_29" header="正哨時薪29天"></p-column>
+    <p-column field="NM_HR_SLY_30" header="正哨時薪30天"></p-column>
+    <p-column field="NM_HR_SLY_31" header="正哨時薪31天"></p-column>
+    <p-column field="SP_HR_SLY_28" header="支援時薪28天"></p-column>
+    <p-column field="SP_HR_SLY_29" header="支援時薪29天"></p-column>
+    <p-column field="SP_HR_SLY_30" header="支援時薪30天"></p-column>
+    <p-column field="SP_HR_SLY_31" header="支援時薪31天"></p-column>
+    <p-column field="BAS_HR_28" header="基本時數28天"></p-column>
+    <p-column field="BAS_HR_29" header="基本時數29天"></p-column>
+    <p-column field="BAS_HR_30" header="基本時數30天"></p-column>
+    <p-column field="BAS_HR_31" header="基本時數31天"></p-column>
+    <p-column field="OVT_RT_28" header="加班時薪28天"></p-column>
+    <p-column field="OVT_RT_29" header="加班時薪29天"></p-column>
+    <p-column field="OVT_RT_30" header="加班時薪30天"></p-column>
+    <p-column field="OVT_RT_31" header="加班時薪31天"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+</p-dataTable>
+

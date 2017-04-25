@@ -1,0 +1,128 @@
+﻿<table>
+    <tr>
+        <th>傳票別</th>
+        <td>
+            <input type="text" ng-model="model.VCH_TY" erp-key erp-char-width-input-display="[4,5]"><select ng-model="model.VCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_AT" erp-key erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票編號</th>
+        <td>
+            <input type="text" ng-model="model.VCH_NO" erp-key erp-char-width-input-display="[15,20]">
+        </td>
+        <th>序號</th>
+        <td>
+            <input type="text" ng-model="model.VCH_SR" style="text-align:right;" numbersonly erp-key erp-char-width-input-display="[20,20]">
+        </td>
+        <th>日期</th>
+        <td>
+            <input type="text" ng-model="model.VCH_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>公司別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>科目代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.ACT_NO" erp-char-width-input-display="[20,8]" dddw-char-width-label="8">
+        </td>
+        <th>營業部門</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_DEPM_NO" ng-model="model.DEPM_NO" erp-char-width-input-display="[10,8]" dddw-char-width-label="8">
+        </td>
+        <th>合約編號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CN_NO" ng-model="model.CN_NO" erp-char-width-input-display="[20,8]" dddw-char-width-label="8">
+        </td>
+    </tr>
+    <tr>
+        <th>服務據點</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_SER_NO" dddw-templatedefstype="SERVE" ng-model="model.SER_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>客戶代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CS_NO" ng-model="model.CS_NO" erp-char-width-input-display="[10,8]" dddw-char-width-label="8">
+        </td>
+        <th>廠商代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_VD_NO" ng-model="model.VD_NO" erp-char-width-input-display="[10,8]" dddw-char-width-label="8">
+        </td>
+        <th>員工代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_EMP_NO" ng-model="model.EMP_NO" erp-char-width-input-display="[10,8]" dddw-char-width-label="8">
+        </td>
+    </tr>
+    <tr>
+        <th>立沖帳目</th>
+        <td>
+            <input type="text" ng-model="model.BCH_NO" erp-char-width-input-display="[24,20]">
+        </td>
+        <th>立沖沖銷碼</th>
+        <td>
+            <select ng-model="model.C_CLS" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_CLS" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>立沖沖銷日期</th>
+        <td>
+            <input type="text" ng-model="model.CLS_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>借貸別</th>
+        <td>
+            <select ng-model="model.C_DCR" ng-options="item.intValue as item.Display3 for item in modeldddw.DDDW_ACTADD_MINUS" erp-char-width-input-display="[20,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>金額</th>
+        <td>
+            <input type="text" ng-model="model.AMT" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>品名</th>
+        <td>
+            <input type="text" ng-model="model.ITEM_NM" erp-char-width-input-display="[30,20]">
+        </td>
+        <th>數量</th>
+        <td>
+            <input type="text" ng-model="model.QTY" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>單價</th>
+        <td>
+            <input type="text" ng-model="model.PRC" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>來源單別</th>
+        <td>
+            <input type="text" ng-model="model.SVCH_TY" erp-char-width-input-display="[4,5]"><select ng-model="model.SVCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_ALL" erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>來源單號</th>
+        <td>
+            <input type="text" ng-model="model.SVCH_NO" erp-char-width-input-display="[15,20]">
+        </td>
+        <th>來源序號</th>
+        <td>
+            <input type="text" ng-model="model.SVCH_SR" style="text-align:right;" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>專案代號</th>
+        <td>
+            <input type="text" ng-model="model.PRJ_NO" erp-char-width-input-display="[20,20]">
+        </td>
+    </tr>
+    <tr>
+        <!--@*<th>現金流量代號</th>
+        <td>
+            <input id="CFW_NO" style="width: 95%;" type="text" ng-model="model.CFW_NO" maxlength="20">
+        </td>*@-->
+        <th>摘要</th>
+        <td colspan="7">
+            <textarea rows="4" style="width:100%;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>
+</table>

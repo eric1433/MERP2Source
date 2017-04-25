@@ -1,0 +1,50 @@
+﻿<table>
+    <tr>
+        <th>異動單別</th>
+        <td>
+            <input type="text" ng-model="model.VCH_TY" erp-char-width-input-display="[4,5]" readonly="readonly"><select ng-model="model.VCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_ALL" erp-char-width-input-display="[4,14]" disabled="disabled">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>異動單號</th>
+        <td>
+            <input type="text" ng-model="model.VCH_NO" erp-char-width-input-display="[15,20]" readonly="readonly">
+        </td>
+        <th>單據日期</th>
+        <td>
+            <input type="text" ng-model="model.AVCH_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]" readonly="readonly">
+        </td>
+    </tr>
+    <tr>
+        <th>傳票別</th>
+        <td>
+            <input type="text" ng-model="model.AVCH_TY" erp-char-width-input-display="[4,5]" readonly="readonly"><select ng-model="model.AVCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_AT" erp-char-width-input-display="[4,14]" disabled="disabled">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票編號</th>
+        <td>
+            <input type="text" ng-model="model.AVCH_NO" erp-char-width-input-display="[15,20]" readonly="readonly">
+        </td>
+        <th>傳票日期</th>
+        <td colspan="3">
+            <input type="text" ng-model="model.AVCH_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]" readonly="readonly">
+        </td>
+    </tr>
+    <tr>
+        <th>拋轉日期</th>
+        <td>
+            <input type="text" ng-model="model.AJS_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]" readonly="readonly">
+        </td>
+        <th>拋轉人員</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_EMP_NO" ng-model="model.AJS_USR_NO" erp-char-width-input-display="[10,9]" dddw-char-width-label="10" dddw-disabled="true" readonly="readonly">
+        </td>
+        <th>來源別</th>
+        <td>
+            <select ng-model="model.C_SOURCE" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_SOURCE_ATTRANS" erp-char-width-input-display="[1,20]" disabled="disabled">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+</table>

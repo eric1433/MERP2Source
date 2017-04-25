@@ -1,0 +1,23 @@
+﻿<h1>actmat02</h1>
+
+
+<command-button [menuType]="scope.menuType"></command-button>
+
+<p-tabView>
+    <!--<p-tabPanel *ngFor="let tab of items" [header]="tab.label">
+        {{tab.label}}
+    </p-tabPanel>-->
+    <p-tabPanel header="資料維護" style=" background-color:aqua;">
+        <div >
+            <actmat02-entry></actmat02-entry>
+        </div>
+        <!--<ng-container *ngComponentOutlet="EntryComponet"></ng-container>-->
+    </p-tabPanel>
+    <p-tabPanel header="查詢條件">
+        <actmat02-codition></actmat02-codition>
+    </p-tabPanel>
+    <p-tabPanel header="查詢輸出">
+        <actmat02-query></actmat02-query>
+    </p-tabPanel>
+
+</p-tabView>

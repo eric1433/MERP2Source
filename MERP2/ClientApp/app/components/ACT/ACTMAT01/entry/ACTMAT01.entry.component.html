@@ -1,0 +1,102 @@
+﻿<table>
+    <tr>
+        <td>
+            <div style="width:180px;height:300px;overflow:auto;float:left;">
+                <abn-tree id="treeViewACT" tree-data="treedata_avm" header="人事系統" tree-control="my_tree" on-select="GetData(branch)" expand-level="1" initial-selection="initNode"></abn-tree>
+            </div>
+        </td>
+        <td style="vertical-align:top;">
+            <table>
+                <tr>
+
+                    <th>科目代號</th>
+                    <td>
+                        <input type="text" ng-model="model.ACT_NO" erp-key erp-char-width-input-display="[20,15]">
+                    </td>
+                    <th>科目名稱</th>
+                    <td>
+                        <input type="text" ng-model="model.ACT_NM" erp-char-width-input-display="[80,15]">
+                    </td>
+                    <th>英文名稱</th>
+                    <td>
+                        <input type="text" ng-model="model.ENG_NM" erp-char-width-input-display="[80,15]">
+                    </td>
+                    <th>統制帳戶</th>
+                    <td>
+                        <select ng-model="model.C_CTRL" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,15]">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>部門管理</th>
+                    <td>
+                        <select ng-model="model.C_DEPM" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,15]">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                    <th>部門限制</th>
+                    <td>
+                        <select ng-model="model.S_DEPM" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,15]">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                    <th>立沖管理</th>
+                    <td>
+                        <select ng-model="model.C_BCH" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,15]">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                    <th>立沖來源</th>
+                    <td>
+                        <select id="C_BCH_SOURCE" ng-model="model.C_BCH_SOURCE" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,15]">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>科目類別</th>
+                    <td>
+                        <select ng-model="model.C_CLAS" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ACTNO_C_CLAS" erp-char-width-input-display="[1,15]">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                    <th>貨幣科目</th>
+                    <td>
+                        <input type="text" ng-model="model.C_CURRENCY" erp-char-width-input-display="[1,15]">
+                    </td>
+                    <th>借貸別</th>
+                    <td>
+                        <select ng-model="model.C_DCR" ng-options="item.intValue as item.Display3 for item in modeldddw.DDDW_ACTADD_MINUS" erp-char-width-input-display="[2,15]">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                    <th>科目層級</th>
+                    <td>
+                        <input type="text" ng-model="model.C_LEV" style="text-align:right;" numbersonly erp-char-width-input-display="[20,15]">
+                    </td>
+                </tr>
+                <tr>
+                    <th>上層科目</th>
+                    <td>
+                        <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.U_ACT_NO" erp-char-width-input-display="[20,6]" dddw-char-width-label="5">
+                    </td>
+                    <th>管理碼</th>
+                    <td>
+                        <input type="text" ng-model="model.MGT_CODE" erp-char-width-input-display="[20,15]">
+                    </td>
+                    <th>幣別</th>
+                    <td>
+                        <input type="text" ng-model="model.CURRENCY" erp-char-width-input-display="[4,15]">
+                    </td>
+                    <th>合併報表匯率別</th>
+                    <td>
+                        <input type="text" ng-model="model.EXCH_RT_TY" erp-char-width-input-display="[10,15]">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+

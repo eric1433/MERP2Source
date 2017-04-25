@@ -1,0 +1,100 @@
+﻿<table>
+    <tr>
+        <th>傳票別</th>
+        <td>
+            <input id="VCH_TY" type="text" ng-model="model.VCH_TY" erp-key erp-char-width-input-display="[4,5]"><select ng-model="model.VCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_AT" erp-key erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票編號</th>
+        <td>
+            <input id="VCH_NO" type="text" ng-model="model.VCH_NO" erp-key erp-char-width-input-display="[15,20]">
+        </td>
+        <th>傳票日期</th>
+        <td>
+            <input id="VCH_DT" type="text" ng-model="model.VCH_DT" erp-key data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>公司別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,1]" dddw-char-width-label="13">
+        </td>
+    </tr>
+    <tr>
+        <th>來源單別</th>
+        <td>
+            <input id="VCH_TY" type="text" ng-model="model.SVCH_TY" erp-char-width-input-display="[4,5]"><select ng-model="model.SVCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_ALL" erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>來源單號</th>
+        <td>
+            <input id="SVCH_NO" type="text" ng-model="model.SVCH_NO" erp-char-width-input-display="[15,20]">
+        </td>
+        <th>原始單別</th>
+        <td>
+            <input id="VCH_TY" type="text" ng-model="model.OVCH_TY" erp-char-width-input-display="[4,5]"><select ng-model="model.OVCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_ALL" erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>原始單號</th>
+        <td>
+            <input id="OVCH_NO" type="text" ng-model="model.OVCH_NO" erp-char-width-input-display="[15,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>列印次數</th>
+        <td>
+            <input id="N_PRT" type="text" ng-model="model.N_PRT" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>簽核碼</th>
+        <td>
+            <select ng-model="model.C_SIGN" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_SIGN" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>確認碼</th>
+        <td>
+            <select ng-model="model.C_CFM" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_CFM" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>確認日期</th>
+        <td>
+            <input id="CFM_DT" type="text" ng-model="model.CFM_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>會計人員</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_EMP_NO" ng-model="model.EMP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="4" style="width: 743px;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>
+</table>
+
+
+
+<p-dataTable [value]="ACTVCHDL">
+    <p-column field="VCH_SR" header="序號"></p-column>
+    <p-column field="ACT_NO" header="科目代號"></p-column>
+    <p-column field="DEPM_NO" header="部門"></p-column>
+    <p-column field="CN_NO" header="合約編號"></p-column>
+    <p-column field="SER_NO" header="客戶代號"></p-column>
+    <p-column field="CS_NO" header="廠商代號"></p-column>
+    <p-column field="VD_NO" header="員工代號"></p-column>
+    <p-column field="EMP_NO" header="立沖帳目"></p-column>
+    <p-column field="C_DCR" header="借貸別"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+    <p-column field="SVCH_TY" header="來源單別"></p-column>
+    <p-column field="SVCH_NO" header="來源單號"></p-column>
+    <p-column field="SVCH_SR" header="來源序號"></p-column>
+    <p-column field="PRJ_NO" header="專案代號"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+
+</p-dataTable>
+
