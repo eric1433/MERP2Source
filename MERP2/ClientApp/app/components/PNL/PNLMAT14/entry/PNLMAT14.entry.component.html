@@ -1,0 +1,33 @@
+﻿<table>
+    <tr>
+        <th>日期</th>
+        <td>
+            <input type="text" class="form-control" ng-model="model.PMS_DT" data-date-format="yyyy/MM/dd" data-min-date="02/10/86" data-max-date="12/31/2050" data-autoclose="1" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>公司別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>期別</th>
+        <td>
+            <select ng-model="model.C_PRD" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ATTRDL_C_PRD" erp-char-width-input-display="[10,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>津貼扣款代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.PMS_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+    </tr>
+</table>
+
+
+
+<p-dataTable [value]="PMSETRDL">
+    <p-column field="EMP_NO" header="員工代號"></p-column>
+    <p-column field="QTY" header="數量"></p-column>
+    <p-column field="PRC" header="單價"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+    <p-column field="C_SOURCE" header="來源別"></p-column>
+</p-dataTable>

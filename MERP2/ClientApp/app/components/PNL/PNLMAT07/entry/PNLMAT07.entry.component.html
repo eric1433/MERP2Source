@@ -1,0 +1,168 @@
+﻿<table>
+    <tr>
+        <th>保險代號</th>
+        <td>
+            <input type="text" ng-model="model.ISU_NO" erp-key erp-char-width-input-display="[10,20]">
+        </td>
+        <th>保險名稱</th>
+        <td>
+            <input type="text" ng-model="model.ISU_NM" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>保險類別</th>
+        <td>
+            <select ng-model="model.ISU_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ISU_TY" erp-char-width-input-display="[10,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>期別</th>
+        <td>
+            <select ng-model="model.C_PRD" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ATTRDL_C_PRD" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <!--<tr>
+        <th>扣款代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>保險費率</th>
+        <td>
+            <input type="text" ng-model="model.EXP_RT" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>員工負擔比率</th>
+        <td>
+            <input type="text" ng-model="model.YEE_RT" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>公司負擔比率</th>
+        <td>
+            <input type="text" ng-model="model.YER_RT" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>投保最高級數</th>
+        <td>
+            <input type="text" ng-model="model.MAX_GRD" style="text-align:right;" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>殘月計算方式</th>
+        <td colspan="5">
+            <select ng-model="model.C_PT_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_PT_TY" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>費用科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.DR_ACT_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>傳票帶部門(費用)</th>
+        <td>
+            <select ng-model="model.C_DEPM_DR" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票帶員工(費用)</th>
+        <td colspan="3">
+            <select ng-model="model.C_EMP_DR" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>應付科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.CR_ACT_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>傳票帶部門(應付)</th>
+        <td>
+            <select ng-model="model.C_DEPM_CR" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票帶員工(應付)</th>
+        <td colspan="3">
+            <select ng-model="model.C_EMP_CR" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="4" style="width: 100%;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>-->
+</table>
+
+<table>
+    <tr>
+        <th>扣款代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>保險費率</th>
+        <td>
+            <input type="text" ng-model="model.EXP_RT" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>員工負擔比率</th>
+        <td>
+            <input type="text" ng-model="model.YEE_RT" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>公司負擔比率</th>
+        <td>
+            <input type="text" ng-model="model.YER_RT" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>投保最高級數</th>
+        <td>
+            <input type="text" ng-model="model.MAX_GRD" style="text-align:right;" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>殘月計算方式</th>
+        <td colspan="5">
+            <select ng-model="model.C_PT_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_PT_TY" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>費用科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.DR_ACT_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>傳票帶部門(費用)</th>
+        <td>
+            <select ng-model="model.C_DEPM_DR" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票帶員工(費用)</th>
+        <td colspan="3">
+            <select ng-model="model.C_EMP_DR" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>應付科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.CR_ACT_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>傳票帶部門(應付)</th>
+        <td>
+            <select ng-model="model.C_DEPM_CR" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票帶員工(應付)</th>
+        <td colspan="3">
+            <select ng-model="model.C_EMP_CR" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+</table>

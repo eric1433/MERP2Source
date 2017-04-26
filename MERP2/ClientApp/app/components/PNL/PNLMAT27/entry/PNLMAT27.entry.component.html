@@ -1,0 +1,119 @@
+﻿<table class="table table-bordered">
+    <tr>
+        <th>單別</th>
+        <td>
+            <input type="text" maxlength="4" ng-model="model.VCH_TY" erp-key erp-char-width-input-display="[4,5]"><select ng-model="model.VCH_TY" style="width: 43%;" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_SLY" erp-key erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+
+        </td>
+        <th>單號</th>
+        <td>
+            <input type="text" ng-model="model.VCH_NO" erp-key erp-char-width-input-display="[15,20]">
+        </td>
+        <th>日期</th>
+        <td>
+            <input type="text" ng-model="model.VCH_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>年月</th>
+        <td>
+            <input style="width: 95%;" type="text" maxlength="6" ng-model="model.YYYYMM" erp-char-width-input-display="[15,20]">
+        </td>
+        <th>領薪方式</th>
+        <td>
+            <select ng-model="model.C_PAY_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_PAY_TY" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+
+    </tr>
+</table>
+
+<table class="table table-bordered">
+    <tr>
+        <th>公司</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>營業部門</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_DEPM_NO" ng-model="model.DEPM_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>發薪期別</th>
+        <td>
+            <input type="text" dddwinput dddw-multi-select dddw-name="DDDW_ATTRDL_C_PRD" ng-model="model.C_PRD" erp-char-width-input-display="[10,6]" dddw-char-width-label="10" dddw-closed="C_PRDClose(rows)" dddw-open="C_PRDOpen(dddwName)">
+            <select ng-model="model.C_PRD" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ATTRDL_C_PRD" erp-char-width-input-display="[1,19]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>轉帳日期</th>
+        <td>
+            <input type="text" ng-model="model.TR_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>匯款日期</th>
+        <td>
+            <input type="text" ng-model="model.RM_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>開票日期</th>
+        <td>
+            <input type="text" ng-model="model.WRT_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>到期日</th>
+        <td colspan="3">
+            <input type="text" ng-model="model.DUE_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>列印次數</th>
+        <td>
+            <input type="text" ng-model="model.N_PRT" style="text-align:right;" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>簽核碼</th>
+        <td>
+            <select ng-model="model.C_SIGN" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_SIGN" erp-char-width-input-display="[1,20]" disabled="disabled">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>確認碼</th>
+        <td>
+            <select ng-model="model.C_CFM" ng-options="item.Value as item.Display for item in modeldddw.DDDW_C_CFM" erp-char-width-input-display="[1,20]" disabled="disabled">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>確認日期</th>
+        <td>
+            <input type="text" ng-model="model.CFM_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]" disabled="disabled">
+        </td>
+    </tr>
+</table>
+
+
+
+<p-dataTable [value]="SLYTRDL">
+    <p-column field="EMP_NO" header="員工代號"></p-column>
+    <p-column field="SER_NO" header="服務據點"></p-column>
+    <p-column field="AMT" header="轉帳金額"></p-column>
+    <p-column field="BANK_NO" header="公司銀行行號"></p-column>
+    <p-column field="BANK_ID" header="員工銀行代碼"></p-column>
+    <p-column field="ACC_NM" header="員工銀行戶名"></p-column>
+    <p-column field="ACC_NO" header="員工銀行帳號"></p-column>
+    <p-column field="ACC_ID_NO" header="開戶身分證號"></p-column>
+    <p-column field="NOT_NO" header="票號"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+</p-dataTable>
+<p-dataTable [value]="SLYTRACT">
+    <p-column field="SR" header="序號"></p-column>
+    <p-column field="ACT_NO" header="科目代號"></p-column>
+    <p-column field="DEPM_NO" header="營業部門"></p-column>
+    <p-column field="CS_NO" header="客戶代號"></p-column>
+    <p-column field="EMP_NO" header="員工"></p-column>
+    <p-column field="CN_NO" header="合約編號"></p-column>
+    <p-column field="SER_NO" header="服務據點"></p-column>
+    <p-column field="BCH_NO" header="立沖帳目"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+    <p-column field="C_DCR" header="借貸別"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+</p-dataTable>

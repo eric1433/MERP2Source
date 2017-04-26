@@ -1,0 +1,293 @@
+﻿<table>
+    <tr>
+        <th>
+            年月
+        </th>
+        <td>
+            <input name="C_SOURCE" id="C_SOURCE" style="width: 95%;" type="hidden" ng-model="model.C_SOURCE">
+            <input type="text" ng-model="model.YYYYMM" erp-char-width-input-display="[10,20]">
+        </td>
+        <th>
+            員工代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_EMP_NO" ng-model="model.EMP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>
+            公司別
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>
+            營業部門
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_DEPM_NO" ng-model="model.DEPM_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>職務</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_JOBNO" ng-model="model.JOB_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+    </tr>
+    <!--<tr>
+        <th>
+            服務據點
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_SER_NO" dddw-templatedefstype="SERVE"  ng-model="model.SER_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>
+            薪資別
+        </th>
+        <td>
+            <select ng-model="model.C_SAL_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_SAL_TY" erp-char-width-input-display="[10,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>
+            時薪
+        </th>
+        <td>
+            <input type="text" ng-model="model.HR_SLY" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            殘月天數
+        </th>
+        <td>
+            <input type="text" ng-model="model.PT_DAY" style="text-align:right;" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>
+            課稅所得
+        </th>
+        <td>
+            <input type="text" ng-model="model.TAX_INC" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>實付金額</th>
+        <td>
+            <input type="text" ng-model="model.AMT" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>成本費用</th>
+        <td>
+            <input type="text" ng-model="model.EXP_AMT" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>到職日</th>
+        <td>
+            <input type="text" ng-model="model.ARV_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>離職日</th>
+        <td>
+            <input type="text" ng-model="model.LEV_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>來源碼</th>
+        <td>
+            <select ng-model="model.C_SOURCE" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ATTRDL_C_SOURCE" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>傳票產生碼</th>
+        <td>
+            <select ng-model="model.C_AJS" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票別</th>
+        <td>
+            <input type="text" ng-model="model.AVCH_TY" erp-char-width-input-display="[4,5]"><select ng-model="model.AVCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_AT" erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票編號</th>
+        <td>
+            <input type="text" ng-model="model.AVCH_NO" erp-char-width-input-display="[15,20]">
+        </td>
+        <th>確認碼</th>
+        <td colspan="3">
+            <select disabled="disabled" ng-model="model.C_CFM" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_CFM"  erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>-->
+</table>
+
+<table>
+    <tr>
+        <th>
+            服務據點
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_SER_NO" dddw-templatedefstype="SERVE" ng-model="model.SER_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>
+            薪資別
+        </th>
+        <td>
+            <select ng-model="model.C_SAL_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_SAL_TY" erp-char-width-input-display="[10,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>
+            時薪
+        </th>
+        <td>
+            <input type="text" ng-model="model.HR_SLY" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            殘月天數
+        </th>
+        <td>
+            <input type="text" ng-model="model.PT_DAY" style="text-align:right;" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>
+            課稅所得
+        </th>
+        <td>
+            <input type="text" ng-model="model.TAX_INC" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>實付金額</th>
+        <td>
+            <input type="text" ng-model="model.AMT" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>成本費用</th>
+        <td>
+            <input type="text" ng-model="model.EXP_AMT" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>到職日</th>
+        <td>
+            <input type="text" ng-model="model.ARV_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>離職日</th>
+        <td>
+            <input type="text" ng-model="model.LEV_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>來源碼</th>
+        <td>
+            <select ng-model="model.C_SOURCE" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ATTRDL_C_SOURCE" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>傳票產生碼</th>
+        <td>
+            <select ng-model="model.C_AJS" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票別</th>
+        <td>
+            <input type="text" ng-model="model.AVCH_TY" erp-char-width-input-display="[4,5]"><select ng-model="model.AVCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_AT" erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>傳票編號</th>
+        <td>
+            <input type="text" ng-model="model.AVCH_NO" erp-char-width-input-display="[15,20]">
+        </td>
+        <th>確認碼</th>
+        <td colspan="3">
+            <select disabled="disabled" ng-model="model.C_CFM" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_CFM" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+
+
+<p-dataTable [value]="EMPPAYDL">
+    <p-column field="C_PRD" header="期別"></p-column>
+    <p-column field="PMS_NO" header="薪資項目代號"></p-column>
+    <p-column field="IO" header="加減項"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+    <p-column field="C_TAX" header="屬課所得稅"></p-column>
+    <p-column field="C_CST" header="計成本費用"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYWRK">
+    <p-column field="CN_NO" header="合約編號"></p-column>
+    <p-column field="JOB_NO" header="職務"></p-column>
+    <p-column field="SER_NO" header="服務據點"></p-column>
+    <p-column field="SER_CORP_NO" header="出勤公司"></p-column>
+    <p-column field="JOB_NO" header="職務"></p-column>
+    <p-column field="WRK_HR" header="出勤時數"></p-column>
+    <p-column field="HR_SLY" header="時薪"></p-column>
+    <p-column field="C_TY" header="性質"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYFRL">
+    <p-column field="FRL_NO" header="假別代號"></p-column>
+    <p-column field="FRL_HR" header="請假時數"></p-column>
+    <p-column field="DDT_RT" header="扣款比率"></p-column>
+    <p-column field="DDT_HR" header="扣薪時數"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYFM">
+    <p-column field="ID_NO" header="眷屬身分證號"></p-column>
+    <p-column field="FA_NM" header="眷屬姓名"></p-column>
+    <p-column field="RELA" header="關係稱謂"></p-column>
+    <p-column field="BRD_DT" header="出生日"></p-column>
+    <p-column field="ISU_DT" header="加保日"></p-column>
+    <p-column field="RIS_DT" header="退保日"></p-column>
+    <p-column field="ADD_NO" header="補助代號"></p-column>
+    <p-column field="ADD_RT" header="補助比率"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYISU">
+    <p-column field="ISU_CORP_NO" header="投保公司"></p-column>
+    <p-column field="ISU_NO" header="保險代號"></p-column>
+    <p-column field="ISU_DT" header="加保日"></p-column>
+    <p-column field="RIS_DT" header="退保日"></p-column>
+    <p-column field="ADD_NO" header="補助代號"></p-column>
+    <p-column field="ADD_RT" header="補助比率"></p-column>
+    <p-column field="ISU_SLY" header="投保薪資"></p-column>
+    <p-column field="CORP_EXP" header="公司保費"></p-column>
+    <p-column field="EMP_EXP" header="員工保費"></p-column>
+    <p-column field="FM_EXP" header="眷屬保費"></p-column>
+    <p-column field="ADD_EXP" header="補充保費"></p-column>
+    <p-column field="CORP_PNS" header="公司提撥退休金"></p-column>
+    <p-column field="EMP_PNS" header="員工自提退休金"></p-column>
+    <p-column field="FM_MS" header="眷屬口數"></p-column>
+    <p-column field="FM_ADD_RT" header="眷屬補助比率"></p-column>
+    <p-column field="PT_DAY" header="殘月天數"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYEQUIP">
+    <p-column field="EQUIP_NO" header="裝備代號"></p-column>
+    <p-column field="ISS_DT" header="領用日期"></p-column>
+    <p-column field="AMT" header="扣款金額"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYDRAW">
+    <p-column field="DRAW_NO" header="薪資扣項代號"></p-column>
+    <p-column field="C_PRD" header="期別"></p-column>
+    <p-column field="PMS_NO" header="薪資項目"></p-column>
+    <p-column field="DRAW_DT" header="起扣日期"></p-column>
+    <p-column field="AMT" header="還款金額"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYOTH">
+    <p-column field="C_PRD" header="期別"></p-column>
+    <p-column field="PMS_NO" header="津貼扣款代號"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYIJT">
+    <p-column field="IJT_NO" header="命令扣款代號"></p-column>
+    <p-column field="IJT_DT" header="執行日期"></p-column>
+    <p-column field="AMT" header="扣款金額"></p-column>
+    <p-column field="FEE" header="手續費"></p-column>
+</p-dataTable>
+<p-dataTable [value]="EMPPAYACT">
+    <p-column field="SR" header="序號"></p-column>
+    <p-column field="ACT_NO" header="科目代號"></p-column>
+    <p-column field="C_PRD" header="期別"></p-column>
+    <p-column field="DEPM_NO" header="營業部門"></p-column>
+    <p-column field="CS_NO" header="客戶代號"></p-column>
+    <p-column field="ACT_EMP_NO" header="員工"></p-column>
+    <p-column field="SER_CORP_NO" header="出勤公司"></p-column>
+    <p-column field="CN_NO" header="合約編號"></p-column>
+    <p-column field="SER_NO" header="服務據點"></p-column>
+    <p-column field="BCH_NO" header="立沖帳目"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+    <p-column field="C_DCR" header="借貸別"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+</p-dataTable>

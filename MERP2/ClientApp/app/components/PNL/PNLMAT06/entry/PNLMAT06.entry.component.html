@@ -1,0 +1,313 @@
+﻿<table>
+    <tr>
+        <th>
+            時薪_28天
+        </th>
+        <td>
+            <input type="text" ng-model="model.HR_SLY_28" style="text-align:right;" decimals="2" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            時薪_29天
+        </th>
+        <td>
+            <input type="text" ng-model="model.HR_SLY_29" style="text-align:right;" decimals="2" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            時薪_30天
+        </th>
+        <td>
+            <input type="text" ng-model="model.HR_SLY_30" style="text-align:right;" decimals="2" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            時薪_31天
+        </th>
+        <td>
+            <input type="text" ng-model="model.HR_SLY_31" style="text-align:right;" decimals="2" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <!--<tr>
+        <th>
+            請假扣款代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.FRL_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            勞保費代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ISU_NO" ng-model="model.LIS_ISU_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            勞保薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.LIS_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            健保費代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ISU_NO" ng-model="model.HIS_ISU_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            健保薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.HIS_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            福利金薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.WF_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            執行命令扣款代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.IJT_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            執行命令手續費代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.IJT_FEE_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            裝備薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.EQUIP_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            健保平均眷口數
+        </th>
+        <td>
+            <input type="text" ng-model="model.HTH_AVG_PR" style="text-align: right;" decimals="2" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            每人最多眷口數
+        </th>
+        <td>
+            <input type="text" ng-model="model.HTH_MAX_PR" style="text-align: right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            退休金員工自提
+        </th>
+        <td>
+            <input type="text" ng-model="model.RET_YEE_RT" style="text-align: right;" decimals="4" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            退休金公司提撥
+        </th>
+        <td>
+            <input type="text" ng-model="model.RET_YER_RT" style="text-align: right;" decimals="4" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            補充保費費率
+        </th>
+        <td>
+            <input type="text" ng-model="model.ADD_EXP_RT" style="text-align: right;" decimals="4" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            補充保費薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.ADD_EXP_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            補充保費起扣金額
+        </th>
+        <td>
+            <input type="text" ng-model="model.ADD_EXP_DDT" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+
+    </tr>
+    <tr>
+        <th>
+            自提退休金薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.RET_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            其他薪獎代號
+        </th>
+        <td colspan="5">
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.SPP_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+    </tr>-->
+</table>
+
+<table>
+    <tr>
+        <th>
+            請假扣款代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.FRL_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            勞保費代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ISU_NO" ng-model="model.LIS_ISU_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            勞保薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.LIS_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            健保費代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ISU_NO" ng-model="model.HIS_ISU_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            健保薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.HIS_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            福利金薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.WF_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            執行命令扣款代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.IJT_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            執行命令手續費代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.IJT_FEE_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            裝備薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.EQUIP_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            健保平均眷口數
+        </th>
+        <td>
+            <input type="text" ng-model="model.HTH_AVG_PR" style="text-align: right;" decimals="2" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            每人最多眷口數
+        </th>
+        <td>
+            <input type="text" ng-model="model.HTH_MAX_PR" style="text-align: right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            退休金員工自提
+        </th>
+        <td>
+            <input type="text" ng-model="model.RET_YEE_RT" style="text-align: right;" decimals="4" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <!--<tr>
+        <th>
+            退休金公司提撥
+        </th>
+        <td>
+            <input type="text" ng-model="model.RET_YER_RT" style="text-align: right;" decimals="4" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            補充保費費率
+        </th>
+        <td>
+            <input type="text" ng-model="model.ADD_EXP_RT" style="text-align: right;" decimals="4" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            補充保費薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.ADD_EXP_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            補充保費起扣金額
+        </th>
+        <td>
+            <input type="text" ng-model="model.ADD_EXP_DDT" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+
+    </tr>
+    <tr>
+        <th>
+            自提退休金薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.RET_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            其他薪獎代號
+        </th>
+        <td colspan="5">
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.SPP_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+    </tr>-->
+</table>
+
+<table>
+    <tr>
+        <th>
+            退休金公司提撥
+        </th>
+        <td>
+            <input type="text" ng-model="model.RET_YER_RT" style="text-align: right;" decimals="4" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            補充保費費率
+        </th>
+        <td>
+            <input type="text" ng-model="model.ADD_EXP_RT" style="text-align: right;" decimals="4" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+        <th>
+            補充保費薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.ADD_EXP_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            補充保費起扣金額
+        </th>
+        <td>
+            <input type="text" ng-model="model.ADD_EXP_DDT" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+
+    </tr>
+    <tr>
+        <th>
+            自提退休金薪資代號
+        </th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.RET_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+        <th>
+            其他薪獎代號
+        </th>
+        <td colspan="5">
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.SPP_PMS_NO" erp-char-width-input-display="[10,4]" dddw-char-width-label="12">
+        </td>
+    </tr>
+</table>
