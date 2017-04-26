@@ -23,8 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\app\components\PNL\PNLMAT32\" />
-    <Folder Include="ClientApp\app\components\PNL\PNLMAT28\" />
-    <Folder Include="ClientApp\app\components\PNL\PNLMAT23\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

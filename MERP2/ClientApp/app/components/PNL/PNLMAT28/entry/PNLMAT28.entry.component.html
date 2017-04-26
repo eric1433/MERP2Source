@@ -1,0 +1,45 @@
+﻿<table>
+    <tr>
+        <th>職務代號</th>
+        <td>
+            <input type="text" ng-model="model.JOB_NO" erp-key erp-char-width-input-display="[10,20]">
+        </td>
+        <th>職務名稱</th>
+        <td>
+            <input type="text" ng-model="model.JOB_NM" erp-char-width-input-display="[80,20]">
+        </td>
+    </tr>
+    <!--<tr>
+        <th>性質</th>
+        <td>
+            <select ng-model="model.C_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_JOB_TY" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>時薪</th>
+        <td>
+            <input type="text" ng-model="model.HR_SLY" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="3" id="REMK" style="width: 345px;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>-->
+</table>
+
+<table>
+    <tr>
+        <th>性質</th>
+        <td>
+            <select ng-model="model.C_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_JOB_TY" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>時薪</th>
+        <td>
+            <input type="text" ng-model="model.HR_SLY" style="text-align:right;" decimals="6" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+</table>

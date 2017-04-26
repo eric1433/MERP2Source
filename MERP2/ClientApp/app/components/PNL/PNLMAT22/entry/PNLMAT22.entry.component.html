@@ -1,0 +1,45 @@
+﻿<table>
+    <tr>
+        <th>員工編號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_EMP_NO" ng-model="model.EMP_NO" erp-char-width-input-display="[20,6]" dddw-char-width-label="10">
+        </td>
+        <th>公司代碼</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>請假日期</th>
+        <td>
+            <input type="text" ng-model="model.FRL_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+    </tr>
+    <!--<tr>
+        <th>請假類別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_FRL_NO" ng-model="model.FRL_NO" erp-char-width-input-display="[20,6]" dddw-char-width-label="10">
+        </td>
+        <th>請假時數</th>
+        <td colspan="5">
+            <input type="text" ng-model="model.FRL_HR" style="text-align:right;" decimals="1" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="4" style="width: 100%;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>-->
+</table>
+
+<table>
+    <tr>
+        <th>請假類別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_FRL_NO" ng-model="model.FRL_NO" erp-char-width-input-display="[20,6]" dddw-char-width-label="10">
+        </td>
+        <th>請假時數</th>
+        <td>
+            <input type="text" ng-model="model.FRL_HR" style="text-align:right;" decimals="1" decimal-point="." erp-char-width-input-display="[18,20]">
+        </td>
+    </tr>
+</table>

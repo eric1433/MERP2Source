@@ -1,0 +1,126 @@
+﻿<table class="table table-bordered">
+    <tr>
+        <th>銀行代號</th>
+        <td>
+            <input type="text" ng-model="model.BANK_NO" style="width:95%;" maxlength="10" />
+        </td>
+        <th>簡稱</th>
+        <td>
+            <input type="text" ng-model="model.BANK_NM" style="width:95%;" maxlength="30" />
+        </td>
+        <th>英文簡稱</th>
+        <td>
+            <input type="text" ng-model="model.BANK_NM_E" style="width:95%;" maxlength="80" />
+        </td>
+        <th>全名</th>
+        <td>
+            <input type="text" ng-model="model.FULL_NM" style="width:95%;" maxlength="80" />
+        </td>
+    </tr>
+    <tr>
+        <th>英文全名</th>
+        <td>
+            <input type="text" ng-model="model.FULL_NM_E" style="width:95%;" maxlength="80" />
+        </td>
+        <th>銀行帳號</th>
+        <td>
+            <input type="text" ng-model="model.ACC_NO" style="width:95%;" maxlength="80" />
+        </td>
+        <th>會計科目</th>
+        <td>
+            <input type="text" ng-model="model.ACT_NO" style="width:95%;" maxlength="20" />
+        </td>
+        <th>立沖帳目</th>
+        <td>
+            <input type="text" ng-model="model.BCH_NO" style="width:95%;" maxlength="24" />
+        </td>
+    </tr>
+    <tr>
+        <th>存款種類</th>
+        <td>
+            <!--@*<select style="width: 75%;" ng-model="model.DPS_KD" ng-options="item.Value as item.Display for item in modeldddw.DPS_KD"></select>*@-->
+            <input style="width: 20%;" type="text" maxlength="10" ng-model="model.DPS_KD">
+        </td>
+        <th>聯絡人</th>
+        <td>
+            <input type="text" ng-model="model.CONTACTER" style="width:95%;" maxlength="30" />
+        </td>
+        <th>聯絡人2</th>
+        <td>
+            <input type="text" ng-model="model.CONTACTER2" style="width:95%;" maxlength="30" />
+        </td>
+        <th>聯絡人3</th>
+        <td>
+            <input type="text" ng-model="model.CONTACTER3" style="width:95%;" maxlength="30" />
+        </td>
+    </tr>
+    <tr>
+        <th>電話</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO" style="width:95%;" maxlength="20" />
+        </td>
+        <th>電話2</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO2" style="width:95%;" maxlength="20" />
+        </td>
+        <th>電話3</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO3" style="width:95%;" maxlength="20" />
+        </td>
+        <th>傳真</th>
+        <td>
+            <input type="text" ng-model="model.FAX_NO" style="width:95%;" maxlength="20" />
+        </td>
+    </tr>
+    <tr>
+        <th>EMAIL</th>
+        <td>
+            <input type="text" ng-model="model.E_MAIL" style="width:95%;" maxlength="80" />
+        </td>
+        <th>網址</th>
+        <td>
+            <input type="text" ng-model="model.WWW" style="width:95%;" maxlength="80" />
+        </td>
+        <th>地址</th>
+        <td>
+            <input type="text" ng-model="model.ADDR" style="width:95%;" maxlength="80" />
+        </td>
+        <th>地址_英文</th>
+        <td>
+            <input type="text" ng-model="model.ADDR_E" style="width:95%;" maxlength="255" />
+        </td>
+
+    </tr>
+    <tr>
+        <th>地址2</th>
+        <td>
+            <input type="text" ng-model="model.ADDR2" style="width:95%;" maxlength="80" />
+        </td>
+        <th>地址2_英文</th>
+        <td>
+            <input type="text" ng-model="model.ADDR2_E2" style="width:95%;" maxlength="255" />
+        </td>
+        <th>幣別</th>
+        <td colspan="3">
+            <!--@*<select style="width: 75%;" ng-model="model.CURRENCY" ng-options="item.Value as item.Display for item in modeldddw.CURRENCY"></select>*@-->
+            <input style="width: 20%;" type="text" maxlength="10" ng-model="model.CURRENCY">
+        </td>
+    </tr>
+    <tr>
+        <th>原幣餘額</th>
+        <td colspan="3">
+            <input type="text" ng-model="model.AMT" style="width:95%;" />
+        </td>
+        <th>本幣餘額</th>
+        <td colspan="3">
+            <input type="text" ng-model="model.NT_AMT" style="width:95%;" />
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="4" name="REMK" id="REMK" style="width: 95%; max-width:95%;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>
+</table>
+

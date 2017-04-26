@@ -1,0 +1,32 @@
+﻿<table>
+    <tr>
+        <th>員工編號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_EMP_NO" ng-model="condition.EMP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+    </tr>
+    <tr>
+        <th>員工姓名</th>
+        <td>
+            <input type="text" ng-model="condition.EMP_NM" erp-char-width-input-display="[10,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>公司</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="condition.CORP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+    </tr>
+    <tr>
+        <th>服務據點</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_SER_NO" dddw-templatedefstype="SERVE" ng-model="condition.SER_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+    </tr>
+    <tr>
+        <th>出勤日期</th>
+        <td>
+            <input type="text" ng-model="condition.WRK_DT__S" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker /> ~ <input type="text" ng-model="condition.WRK_DT__E" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker />
+        </td>
+    </tr>
+</table>    

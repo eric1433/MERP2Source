@@ -1,0 +1,23 @@
+﻿<table>
+    <tr>
+        <th>假別代號</th>
+        <td>
+            <input type="text" ng-model="model.FRL_NO" erp-key erp-char-width-input-display="[20,20]">
+        </td>
+        <th>假別名稱</th>
+        <td>
+            <input type="text" ng-model="model.FRL_NM" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>是否扣款</th>
+        <td>
+            <select ng-model="model.C_DDT" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>扣款比率</th>
+        <td>
+            <input type="text" ng-model="model.DDT_RT" style="text-align:right;" decimals="4" decimal-point="." erp-char-width-input-display="[20,20]">
+        </td>
+    </tr>
+
+</table>

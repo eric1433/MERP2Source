@@ -1,0 +1,23 @@
+﻿<h1>pnlmat17</h1>
+
+
+<command-button [menuType]="scope.menuType"></command-button>
+
+<p-tabView>
+    <!--<p-tabPanel *ngFor="let tab of items" [header]="tab.label">
+        {{tab.label}}
+    </p-tabPanel>-->
+    <p-tabPanel header="資料維護" style=" background-color:aqua;">
+        <div >
+            <pnlmat17-entry></pnlmat17-entry>
+        </div>
+        <!--<ng-container *ngComponentOutlet="EntryComponet"></ng-container>-->
+    </p-tabPanel>
+    <p-tabPanel header="查詢條件">
+        <pnlmat17-codition></pnlmat17-codition>
+    </p-tabPanel>
+    <p-tabPanel header="查詢輸出">
+        <pnlmat17-query></pnlmat17-query>
+    </p-tabPanel>
+
+</p-tabView>
