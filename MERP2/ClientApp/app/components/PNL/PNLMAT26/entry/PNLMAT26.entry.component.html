@@ -1,0 +1,63 @@
+﻿<table>
+    <tr>
+        <th>薪資名目代號</th>
+        <td>
+            <input type="text" ng-model="model.NAME_NO" erp-key erp-char-width-input-display="[10,20]">
+        </td>
+        <th>薪資名目名稱</th>
+        <td>
+            <input type="text" ng-model="model.NAME_NM" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>薪資名目類別</th>
+        <td>
+            <select ng-model="model.NAME_CLASS" ng-options="item.intValue as item.Display3 for item in modeldddw.DDDW_PMSNAME_CLASS" erp-char-width-input-display="[10,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <!--<tr>
+        <th>加減項</th>
+        <td>
+            <select ng-model="model.IO" ng-options="item.intValue as item.Display3 for item in modeldddw.DDDW_ADD_MINUS" erp-char-width-input-display="[20,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>顯示順序</th>
+        <td>
+            <input type="text" ng-model="model.DISP_SR" erp-char-width-input-display="[10,20]">
+        </td>
+        <th>零值顯示</th>
+        <td>
+            <select ng-model="model.C_ZERO" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td  colspan="5">
+            <input style="width: 100%;" type="text" maxlength="255" ng-model="model.REMK">
+        </td>
+    </tr>-->
+</table>
+
+<table>
+    <tr>
+        <th>加減項</th>
+        <td>
+            <select ng-model="model.IO" ng-options="item.intValue as item.Display3 for item in modeldddw.DDDW_ADD_MINUS" erp-char-width-input-display="[20,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>顯示順序</th>
+        <td>
+            <input type="text" ng-model="model.DISP_SR" erp-char-width-input-display="[10,20]">
+        </td>
+        <th>零值顯示</th>
+        <td>
+            <select ng-model="model.C_ZERO" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_YES_NO" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+</table>

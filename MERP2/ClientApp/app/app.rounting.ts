@@ -26,6 +26,7 @@ import { PNLMAT08Component } from './components/PNL/PNLMAT08/PNLMAT08.component'
 import { PNLMAT09Component } from './components/PNL/PNLMAT09/PNLMAT09.component';
 import { PNLMAT10Component } from './components/PNL/PNLMAT10/PNLMAT10.component';
 import { PNLMAT11Component } from './components/PNL/PNLMAT11/PNLMAT11.component';
+import { PNLMAT13Component } from './components/PNL/PNLMAT13/PNLMAT13.component';
 import { PNLMAT14Component } from './components/PNL/PNLMAT14/PNLMAT14.component';
 import { PNLMAT15Component } from './components/PNL/PNLMAT15/PNLMAT15.component';
 import { PNLMAT16Component } from './components/PNL/PNLMAT16/PNLMAT16.component';
@@ -33,6 +34,7 @@ import { PNLMAT17Component } from './components/PNL/PNLMAT17/PNLMAT17.component'
 import { PNLMAT18Component } from './components/PNL/PNLMAT18/PNLMAT18.component';
 import { PNLMAT22Component } from './components/PNL/PNLMAT22/PNLMAT22.component';
 import { PNLMAT23Component } from './components/PNL/PNLMAT23/PNLMAT23.component';
+import { PNLMAT26Component } from './components/PNL/PNLMAT26/PNLMAT26.component';
 import { PNLMAT27Component } from './components/PNL/PNLMAT27/PNLMAT27.component';
 import { PNLMAT28Component } from './components/PNL/PNLMAT28/PNLMAT28.component';
 import { PNLMAT31Component } from './components/PNL/PNLMAT31/PNLMAT31.component';
@@ -59,7 +61,6 @@ import { PNLMAT01Module } from './components/PNL/PNLMAT01/PNLMAT01.module';
 import { PNLMAT02Module } from './components/PNL/PNLMAT02/PNLMAT02.module';
 import { PNLMAT03Module } from './components/PNL/PNLMAT03/PNLMAT03.module';
 import { PNLMAT04Module } from './components/PNL/PNLMAT04/PNLMAT04.module';
-
 import { PNLMAT05Module } from './components/PNL/PNLMAT05/PNLMAT05.module';
 import { PNLMAT06Module } from './components/PNL/PNLMAT06/PNLMAT06.module';
 import { PNLMAT07Module } from './components/PNL/PNLMAT07/PNLMAT07.module';
@@ -67,6 +68,7 @@ import { PNLMAT08Module } from './components/PNL/PNLMAT08/PNLMAT08.module';
 import { PNLMAT09Module } from './components/PNL/PNLMAT09/PNLMAT09.module';
 import { PNLMAT10Module } from './components/PNL/PNLMAT10/PNLMAT10.module';
 import { PNLMAT11Module } from './components/PNL/PNLMAT11/PNLMAT11.module';
+import { PNLMAT13Module } from './components/PNL/PNLMAT13/PNLMAT13.module';
 import { PNLMAT14Module } from './components/PNL/PNLMAT14/PNLMAT14.module';
 import { PNLMAT15Module } from './components/PNL/PNLMAT15/PNLMAT15.module';
 import { PNLMAT16Module } from './components/PNL/PNLMAT16/PNLMAT16.module';
@@ -74,6 +76,7 @@ import { PNLMAT17Module } from './components/PNL/PNLMAT17/PNLMAT17.module';
 import { PNLMAT18Module } from './components/PNL/PNLMAT18/PNLMAT18.module';
 import { PNLMAT22Module } from './components/PNL/PNLMAT22/PNLMAT22.module';
 import { PNLMAT23Module } from './components/PNL/PNLMAT23/PNLMAT23.module';
+import { PNLMAT26Module } from './components/PNL/PNLMAT26/PNLMAT26.module';
 import { PNLMAT27Module } from './components/PNL/PNLMAT27/PNLMAT27.module';
 import { PNLMAT28Module } from './components/PNL/PNLMAT28/PNLMAT28.module';
 import { PNLMAT31Module } from './components/PNL/PNLMAT31/PNLMAT31.module';
@@ -152,6 +155,9 @@ export function loadPNLMAT10Module() {
 export function loadPNLMAT11Module() {
     return PNLMAT11Module;
 }
+export function loadPNLMAT13Module() {
+    return PNLMAT13Module;
+}
 export function loadPNLMAT14Module() {
     return PNLMAT14Module;
 }
@@ -172,6 +178,9 @@ export function loadPNLMAT22Module() {
 }
 export function loadPNLMAT23Module() {
     return PNLMAT23Module;
+}
+export function loadPNLMAT26Module() {
+    return PNLMAT26Module;
 }
 export function loadPNLMAT27Module() {
     return PNLMAT27Module;
@@ -213,6 +222,7 @@ const routes: Routes = [
     { path: 'PNLMAT09', loadChildren: loadPNLMAT09Module },
     { path: 'PNLMAT10', loadChildren: loadPNLMAT10Module },
     { path: 'PNLMAT11', loadChildren: loadPNLMAT11Module },
+    { path: 'PNLMAT13', loadChildren: loadPNLMAT13Module },
     { path: 'PNLMAT14', loadChildren: loadPNLMAT14Module },
     { path: 'PNLMAT15', loadChildren: loadPNLMAT15Module },
     { path: 'PNLMAT16', loadChildren: loadPNLMAT16Module },
@@ -220,6 +230,7 @@ const routes: Routes = [
     { path: 'PNLMAT18', loadChildren: loadPNLMAT18Module },
     { path: 'PNLMAT22', loadChildren: loadPNLMAT22Module },
     { path: 'PNLMAT23', loadChildren: loadPNLMAT23Module },
+    { path: 'PNLMAT26', loadChildren: loadPNLMAT26Module },
     { path: 'PNLMAT27', loadChildren: loadPNLMAT27Module },
     { path: 'PNLMAT28', loadChildren: loadPNLMAT28Module },
     { path: 'PNLMAT31', loadChildren: loadPNLMAT31Module },
