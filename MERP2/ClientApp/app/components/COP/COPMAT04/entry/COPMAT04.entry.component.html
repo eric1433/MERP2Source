@@ -1,0 +1,55 @@
+﻿<table>
+    <tr>
+        <th>日期</th>
+        <td>
+            <input type="text" class="form-control" ng-model="model.PMS_DT" data-date-format="yyyy/MM/dd" data-min-date="02/10/86" data-max-date="12/31/2050" data-autoclose="1" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>公司別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>期別</th>
+        <td>
+            <select ng-model="model.C_PRD" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ATTRDL_C_PRD" erp-char-width-input-display="[10,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>津貼扣款代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.PMS_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+    </tr>
+</table>
+
+<p-dataTable [value]="CONTRCITEM">
+    <p-column field="VCH_SR" header="序號"></p-column>
+    <p-column field="CITEM_NO" header="合約項目代號"></p-column>
+    <p-column field="ACT_NO" header="會計科目"></p-column>
+    <p-column field="BCH_NO" header="立沖帳目"></p-column>
+    <p-column field="B_DT" header="起始日期"></p-column>
+    <p-column field="E_DT" header="截止日期"></p-column>
+    <p-column field="IVC_MODE" header="發票合併方式"></p-column>
+    <p-column field="IVC_TY" header="結帳方式"></p-column>
+    <p-column field="IVC_MM" header="開發票月份"></p-column>
+    <p-column field="IVC_DAY" header="開發票日期"></p-column>
+    <p-column field="AMT_MM" header="每月金額"></p-column>
+    <p-column field="SRV_MM" header="服務月數"></p-column>
+    <p-column field="AMT" header="項目金額"></p-column>
+    <p-column field="AR_PRD" header="每期應收"></p-column>
+    <p-column field="PRD" header="收款期數"></p-column>
+    <p-column field="TAX_TY" header="課稅別"></p-column>
+    <p-column field="TAX_RT" header="稅率"></p-column>
+    <p-column field="C_STA" header="合約狀態"></p-column>
+    <p-column field="C_EXP" header="計費否"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+
+</p-dataTable>
+
+<p-dataTable [value]="CONTRBUG">
+    <p-column field="VCH_SR" header="序號"></p-column>
+    <p-column field="C_BUG" header="預算別"></p-column>
+    <p-column field="ACT_NO" header="會計科目"></p-column>
+    <p-column field="YYYYMM" header="年月"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+</p-dataTable>

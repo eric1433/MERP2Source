@@ -1,0 +1,22 @@
+﻿<table>
+    <tr>
+        <td>發票項目代號</td>
+        <td>
+            <input type="text" ng-model="condition.VITEM_NO" erp-char-width-input-display="[20,20]">
+        </td>
+    </tr>
+    <tr>
+        <td>發票項目名稱</td>
+        <td>
+            <input type="text" ng-model="condition.VITEM_NM" erp-char-width-input-display="[80,20]">
+        </td>
+    </tr>
+    <tr>
+        <td>項目別</td>
+        <td>
+            <select ng-model="condition.VITEM_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_VITEM_TY" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+</table>

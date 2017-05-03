@@ -1,0 +1,23 @@
+﻿<h1>copmat04</h1>
+
+
+<command-button [menuType]="scope.menuType"></command-button>
+
+<p-tabView>
+    <!--<p-tabPanel *ngFor="let tab of items" [header]="tab.label">
+        {{tab.label}}
+    </p-tabPanel>-->
+    <p-tabPanel header="資料維護" style=" background-color:aqua;">
+        <div >
+            <copmat04-entry></copmat04-entry>
+        </div>
+        <!--<ng-container *ngComponentOutlet="EntryComponet"></ng-container>-->
+    </p-tabPanel>
+    <p-tabPanel header="查詢條件">
+        <copmat04-codition></copmat04-codition>
+    </p-tabPanel>
+    <p-tabPanel header="查詢輸出">
+        <copmat04-query></copmat04-query>
+    </p-tabPanel>
+
+</p-tabView>

@@ -39,11 +39,16 @@ import { PNLMAT27Component } from './components/PNL/PNLMAT27/PNLMAT27.component'
 import { PNLMAT28Component } from './components/PNL/PNLMAT28/PNLMAT28.component';
 import { PNLMAT31Component } from './components/PNL/PNLMAT31/PNLMAT31.component';
 import { PNLMAT32Component } from './components/PNL/PNLMAT32/PNLMAT32.component';
-
-
-
-
-
+import { COPMAT01Component } from './components/COP/COPMAT01/COPMAT01.component';
+import { COPMAT02Component } from './components/COP/COPMAT02/COPMAT02.component';
+import { COPMAT03Component } from './components/COP/COPMAT03/COPMAT03.component';
+import { COPMAT04Component } from './components/COP/COPMAT04/COPMAT04.component';
+import { COPMAT05Component } from './components/COP/COPMAT05/COPMAT05.component';
+import { COPMAT06Component } from './components/COP/COPMAT06/COPMAT06.component';
+import { COPMAT07Component } from './components/COP/COPMAT07/COPMAT07.component';
+import { COPMAT11Component } from './components/COP/COPMAT11/COPMAT11.component';
+import { COPMAT12Component } from './components/COP/COPMAT12/COPMAT12.component';
+import { COPMAT13Component } from './components/COP/COPMAT13/COPMAT13.component';
 
 import { PUBMAT01Module } from './components/PUB/PUBMAT01/PUBMAT01.module';
 import { PUBMAT02Module } from './components/PUB/PUBMAT02/PUBMAT02.module';
@@ -81,8 +86,16 @@ import { PNLMAT27Module } from './components/PNL/PNLMAT27/PNLMAT27.module';
 import { PNLMAT28Module } from './components/PNL/PNLMAT28/PNLMAT28.module';
 import { PNLMAT31Module } from './components/PNL/PNLMAT31/PNLMAT31.module';
 import { PNLMAT32Module } from './components/PNL/PNLMAT32/PNLMAT32.module';
-
-
+import { COPMAT01Module } from './components/COP/COPMAT01/COPMAT01.module';
+import { COPMAT02Module } from './components/COP/COPMAT02/COPMAT02.module';
+import { COPMAT03Module } from './components/COP/COPMAT03/COPMAT03.module';
+import { COPMAT04Module } from './components/COP/COPMAT04/COPMAT04.module';
+import { COPMAT05Module } from './components/COP/COPMAT05/COPMAT05.module';
+import { COPMAT06Module } from './components/COP/COPMAT06/COPMAT06.module';
+import { COPMAT07Module } from './components/COP/COPMAT07/COPMAT07.module';
+import { COPMAT11Module } from './components/COP/COPMAT11/COPMAT11.module';
+import { COPMAT12Module } from './components/COP/COPMAT12/COPMAT12.module';
+import { COPMAT13Module } from './components/COP/COPMAT13/COPMAT13.module';
 
 
 export function loadPUBMAT01Module()
@@ -194,6 +207,36 @@ export function loadPNLMAT31Module() {
 export function loadPNLMAT32Module() {
     return PNLMAT32Module;
 }
+export function loadCOPMAT01Module() {
+    return COPMAT01Module;
+}
+export function loadCOPMAT02Module() {
+    return COPMAT02Module;
+}
+export function loadCOPMAT03Module() {
+    return COPMAT03Module;
+}
+export function loadCOPMAT04Module() {
+    return COPMAT04Module;
+}
+export function loadCOPMAT05Module() {
+    return COPMAT05Module;
+}
+export function loadCOPMAT06Module() {
+    return COPMAT06Module;
+}
+export function loadCOPMAT07Module() {
+    return COPMAT07Module;
+}
+export function loadCOPMAT11Module() {
+    return COPMAT11Module;
+}
+export function loadCOPMAT12Module() {
+    return COPMAT12Module;
+}
+export function loadCOPMAT13Module() {
+    return COPMAT13Module;
+}
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -235,6 +278,16 @@ const routes: Routes = [
     { path: 'PNLMAT28', loadChildren: loadPNLMAT28Module },
     { path: 'PNLMAT31', loadChildren: loadPNLMAT31Module },
     { path: 'PNLMAT32', loadChildren: loadPNLMAT32Module },
+    { path: 'COPMAT01', loadChildren: loadCOPMAT01Module },
+    { path: 'COPMAT02', loadChildren: loadCOPMAT02Module },
+    { path: 'COPMAT03', loadChildren: loadCOPMAT03Module },
+    { path: 'COPMAT04', loadChildren: loadCOPMAT04Module },
+    { path: 'COPMAT05', loadChildren: loadCOPMAT05Module },
+    { path: 'COPMAT06', loadChildren: loadCOPMAT06Module },
+    { path: 'COPMAT07', loadChildren: loadCOPMAT07Module },
+    { path: 'COPMAT11', loadChildren: loadCOPMAT11Module },
+    { path: 'COPMAT12', loadChildren: loadCOPMAT12Module },
+    { path: 'COPMAT13', loadChildren: loadCOPMAT13Module },
     { path: 'fetch-data', component: FetchDataComponent },
     { path: '**', redirectTo: 'home' },
 ];

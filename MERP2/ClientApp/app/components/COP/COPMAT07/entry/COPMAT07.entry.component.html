@@ -1,0 +1,85 @@
+﻿<table>
+    <tr>
+        <th>日期</th>
+        <td>
+            <input type="text" class="form-control" ng-model="model.PMS_DT" data-date-format="yyyy/MM/dd" data-min-date="02/10/86" data-max-date="12/31/2050" data-autoclose="1" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>公司別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+        <th>期別</th>
+        <td>
+            <select ng-model="model.C_PRD" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ATTRDL_C_PRD" erp-char-width-input-display="[10,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>津貼扣款代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_PMS_NO" ng-model="model.PMS_NO" erp-char-width-input-display="[10,6]" dddw-char-width-label="10">
+        </td>
+    </tr>
+</table>
+
+
+
+<p-dataTable [value]="CTRARDL">
+    <p-column field="VCH_SR" header="序號"></p-column>
+    <p-column field="AR_TY" header="結帳單別"></p-column>
+    <p-column field="AR_NO" header="結帳單號"></p-column>
+    <p-column field="AR_SR" header="結帳序號"></p-column>
+    <p-column field="AR_AMT" header="應收金額"></p-column>
+    <p-column field="UR_AMT" header="未收金額"></p-column>
+    <p-column field="CPS_AMT" header="沖帳金額"></p-column>
+    <p-column field="DS_AMT" header="折讓金額"></p-column>
+    <p-column field="ACT_NO" header="會計科目"></p-column>
+    <p-column field="BCH_NO" header="立沖帳目"></p-column>
+    <p-column field="ACT_REMK" header="傳票摘要"></p-column>
+    <p-column field="DS_ACT_NO" header="折讓科目"></p-column>
+    <p-column field="DS_BCH_NO" header="折讓立沖"></p-column>
+    <p-column field="DS_REMK" header="折讓摘要"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+</p-dataTable>
+
+<p-dataTable [value]="CTRARML">
+    <p-column field="VCH_SR" header="序號"></p-column>
+    <p-column field="RAR_TY" header="收款種類"></p-column>
+    <p-column field="AMT" header="收款金額"></p-column>
+    <p-column field="ACT_NO" header="收款科目"></p-column>
+    <p-column field="BCH_NO" header="立沖帳目"></p-column>
+    <p-column field="ACT_REMK" header="傳票摘要"></p-column>
+    <p-column field="DW_DT" header="轉帳日期"></p-column>
+    <p-column field="BANK_NO" header="轉入銀行"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+</p-dataTable>
+
+<p-dataTable [value]="CTRARNOTR">
+    <p-column field="VCH_SR" header="序號"></p-column>
+    <p-column field="NOT_NO" header="票號"></p-column>
+    <p-column field="AMT" header="票面金額"></p-column>
+    <p-column field="RCV_DT" header="收票日"></p-column>
+    <p-column field="DUE_DT" header="到期日"></p-column>
+    <p-column field="PCASH_DT" header="預兌日"></p-column>
+    <p-column field="P_BANK_NM" header="付款銀行"></p-column>
+    <p-column field="P_ACC_NO" header="帳號"></p-column>
+    <p-column field="C_CS" header="客票"></p-column>
+    <p-column field="C_BANK_NO" header="託收銀行"></p-column>
+    <p-column field="ACT_NO" header="收款科目"></p-column>
+    <p-column field="BCH_NO" header="立沖帳目"></p-column>
+    <p-column field="ACT_REMK" header="傳票摘要"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+</p-dataTable>
+
+<p-dataTable [value]="CTRARACT">
+    <p-column field="SR" header="序號"></p-column>
+    <p-column field="ACT_NO" header="科目代號"></p-column>
+    <p-column field="DEPM_NO" header="部門"></p-column>
+    <p-column field="CS_NO" header="客戶代號"></p-column>
+    <p-column field="EMP_NO" header="員工代號"></p-column>
+    <p-column field="CN_NO" header="合約編號"></p-column>
+    <p-column field="SER_NO" header="服務據點"></p-column>
+    <p-column field="BCH_NO" header="立沖帳目"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+    <p-column field="C_DCR" header="借貸別"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+</p-dataTable>

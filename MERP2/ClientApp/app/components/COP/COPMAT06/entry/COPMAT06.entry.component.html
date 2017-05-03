@@ -1,0 +1,144 @@
+﻿<table>
+    <tr>
+        <th>單別</th>
+        <td>
+            <input type="text" maxlength="4" ng-model="model.VCH_TY" erp-key erp-char-width-input-display="[4,5]"><select ng-model="model.VCH_TY" style="width: 43%;" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_CNIVC" erp-key erp-char-width-input-display="[4,14]">
+                <option value=""></option>
+            </select>
+
+        </td>
+        <th>單號</th>
+        <td>
+            <input type="text" ng-model="model.VCH_NO" erp-key erp-char-width-input-display="[15,20]">
+        </td>
+        <th>日期</th>
+        <td>
+            <input type="text" ng-model="model.VCH_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+        <th>發票日期</th>
+        <td>
+            <input type="text" ng-model="model.IVC_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>發票年月</th>
+        <td>
+            <input type="text" ng-model="model.YYYYMM" style="text-align:right;" numbersonly erp-char-width-input-display="[6,20]">
+        </td>
+        <th>發票組別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_IVC_GRP" ng-model="model.IVC_GRP" erp-char-width-input-display="[10,5]" dddw-char-width-label="11">
+        </td>
+        <th>發票號碼</th>
+        <td>
+            <input type="text" ng-model="model.IVC_NO" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>發票聯數</th>
+        <td>
+            <select ng-model="model.IVC_PAGE" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_IVC_PAGE" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>課稅別</th>
+        <td>
+            <select ng-model="model.TAX_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_TAX_TY" erp-char-width-input-display="[1,12]">
+                <option value=""></option>
+            </select><input type="text" ng-model="model.TAX_RT" style="text-align:right;" decimals="2" decimal-point="." erp-char-width-input-display="[18,7]">
+        </td>
+        <th>發票金額</th>
+        <td>
+            <input type="text" ng-model="model.IVC_AMT" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]" disabled="disabled">
+        </td>
+        <th>發票稅額</th>
+        <td>
+            <input type="text" ng-model="model.IVC_TAX" style="text-align:right;" decimals="0" decimal-point="." erp-char-width-input-display="[18,20]" disabled="disabled">
+        </td>
+        <th>公司別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,5]" dddw-char-width-label="11">
+        </td>
+    </tr>
+    <tr>
+        <th>公司統編</th>
+        <td>
+            <input type="text" ng-model="model.S_UNIQUE_NO" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>客戶代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CS_NO" ng-model="model.CS_NO" erp-char-width-input-display="[10,5]" dddw-char-width-label="11">
+        </td>
+        <th>客戶統編</th>
+        <td>
+            <input type="text" ng-model="model.B_UNIQUE_NO" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>發票抬頭</th>
+        <td>
+            <input type="text" ng-model="model.FULL_NM" erp-char-width-input-display="[80,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>列印次數</th>
+        <td>
+            <input type="text" ng-model="model.N_PRT" style="text-align:right;" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>簽核碼</th>
+        <td>
+            <select ng-model="model.C_SIGN" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_C_SIGN" erp-char-width-input-display="[1,20]" disabled="disabled">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>確認碼</th>
+        <td>
+            <select ng-model="model.C_CFM" ng-options="item.Value as item.Display for item in modeldddw.DDDW_C_CFM" erp-char-width-input-display="[1,20]" disabled="disabled">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>確認日期</th>
+        <td>
+            <input type="text" ng-model="model.CFM_DT" data-date-format="yyyy/MM/dd" data-autoclose="1" placeholder="Date" bs-datepicker erp-char-width-input-display="[10,20]" disabled="disabled">
+        </td>
+    </tr>
+    <tr>
+        <th>來源碼</th>
+        <td>
+            <select ng-model="model.C_SOURCE" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_ATTRDL_C_SOURCE" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="4" style="width: 100%" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>
+</table>
+
+
+
+
+<p-dataTable [value]="IVCCNAR">
+    <p-column field="VCH_SR" header="序號"></p-column>
+    <p-column field="C_SOURCE" header="來源"></p-column>
+    <p-column field="AR_TY" header="結帳單別"></p-column>
+    <p-column field="AR_NO" header="結帳單號"></p-column>
+    <p-column field="AR_SR" header="結帳序號"></p-column>
+    <p-column field="IVC_AMT" header="發票金額"></p-column>
+    <p-column field="IVC_TAX" header="發票稅額"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+
+</p-dataTable>
+
+<p-dataTable [value]="IVCCNDL">
+    <p-column field="VCH_SR" header="序號"></p-column>
+    <p-column field="VITEM_NO" header="發票項目代號"></p-column>
+    <p-column field="VITEM_NM" header="發票項目名稱"></p-column>
+    <p-column field="QTY" header="數量"></p-column>
+    <p-column field="PRC" header="單價"></p-column>
+    <p-column field="AMT" header="金額"></p-column>
+    <p-column field="B_DT" header="起始日期"></p-column>
+    <p-column field="E_DT" header="截止日期"></p-column>
+    <p-column field="REMK" header="備註"></p-column>
+</p-dataTable>

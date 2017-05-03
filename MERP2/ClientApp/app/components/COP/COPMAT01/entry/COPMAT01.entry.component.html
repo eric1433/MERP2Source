@@ -1,0 +1,137 @@
+﻿<table>
+    <tr>
+        <th>客戶代號</th>
+        <td>
+            <input type="text" ng-model="model.CS_NO" erp-key erp-char-width-input-display="[10,20]">
+        </td>
+        <th>客戶簡稱</th>
+        <td>
+            <input type="text" ng-model="model.SHORT_NM" erp-require erp-char-width-input-display="[10,20]">
+        </td>
+        <th>客戶全名</th>
+        <td>
+            <input type="text" ng-model="model.FULL_NM" erp-char-width-input-display="[80,20]">
+        </td>
+        <th>統一編號</th>
+        <td>
+            <input type="text" ng-model="model.UNIQUE_NO" erp-require erp-char-width-input-display="[20,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>負責人</th>
+        <td>
+            <input type="text" ng-model="model.PROPRIETOR" erp-char-width-input-display="[80,20]">
+        </td>
+        <th>公司地址</th>
+        <td>
+            <input type="text" ng-model="model.ADDR" erp-char-width-input-display="[80,20]">
+        </td>
+        <th>電話</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>電話2</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO2" erp-char-width-input-display="[20,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>電話3</th>
+        <td>
+            <input type="text" ng-model="model.TEL_NO3" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>聯絡人</th>
+        <td>
+            <input type="text" ng-model="model.CONTACTER" erp-char-width-input-display="[80,20]">
+        </td>
+
+        <th>聯絡人2</th>
+        <td>
+            <input type="text" ng-model="model.CONTACTER2" erp-char-width-input-display="[80,20]">
+        </td>
+        <th>聯絡人3</th>
+        <td>
+            <input type="text" ng-model="model.CONTACTER3" erp-char-width-input-display="[80,20]">
+        </td>
+
+    </tr>
+    <tr>
+
+
+        <th>傳真</th>
+        <td>
+            <input type="text" ng-model="model.FAX_NO" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>公司別</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CORP_NO" ng-model="model.CORP_NO" erp-char-width-input-display="[10,8]" dddw-char-width-label="8">
+        </td>
+        <th>營業部門</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_DEPM_NO" ng-model="model.DEPM_NO" erp-char-width-input-display="[10,8]" dddw-char-width-label="8">
+        </td>
+        <th>發票合併方式</th>
+        <td>
+            <select ng-model="model.IVC_MODE" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_IVC_MODE" erp-char-width-input-display="[1,20]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>開發票月份</th>
+        <td>
+            <input type="text" ng-model="model.IVC_MM" numbersonly erp-char-width-input-display="[20,20]">
+        </td>
+        <th>開發票日期</th>
+        <td>
+            <input type="text" ng-model="model.IVC_DAY" numbersonly numbersmax="31" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>課稅別</th>
+        <td>
+            <select ng-model="model.TAX_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_TAX_TY" erp-char-width-input-display="[4,12]">
+                <option value=""></option>
+            </select><input type="text" ng-model="model.TAX_RT" decimals="2" decimal-point="." erp-char-width-input-display="[10,7]">
+        </td>
+    </tr>
+    <tr>
+        <th>帳款科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.AR_ACT_NO" erp-char-width-input-display="[20,6]" dddw-char-width-label="10">
+        </td>
+        <th>帳款立沖</th>
+        <td>
+            <input type="text" ng-model="model.AR_BCH_NO" erp-char-width-input-display="[24,20]">
+        </td>
+        <th>預收科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.PR_ACT_NO" erp-char-width-input-display="[20,6]" dddw-char-width-label="10">
+        </td>
+        <th>預收立沖</th>
+        <td>
+            <input type="text" ng-model="model.PR_BCH_NO" erp-char-width-input-display="[24,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>票據科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.NR_ACT_NO" erp-char-width-input-display="[20,6]" dddw-char-width-label="10">
+        </td>
+        <th>票據立沖</th>
+        <td>
+            <input type="text" ng-model="model.NR_BCH_NO" erp-char-width-input-display="[24,20]">
+        <th>暫估科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.EAR_ACT_NO" erp-char-width-input-display="[20,6]" dddw-char-width-label="10">
+        </td>
+        <th>暫估立沖</th>
+        <td>
+            <input type="text" ng-model="model.EAR_BCH_NO" erp-char-width-input-display="[24,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="4" style="width: 100%;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,46 @@
+﻿<table>
+    <tr>
+        <th>合約項目代號</th>
+        <td>
+            <input type="text" ng-model="model.CITEM_NO" erp-key erp-char-width-input-display="[20,20]">
+        </td>
+        <th>合約項目全名</th>
+        <td>
+            <input type="text" ng-model="model.CITEM_NM" erp-char-width-input-display="[20,20]">
+        </td>
+        <th>項目別</th>
+        <td>
+            <select ng-model="model.CITEM_TY" ng-options="item.Value as item.Display3 for item in modeldddw.DDDW_CN_TY" erp-char-width-input-display="[10,20]">
+                <option value=""></option>
+            </select>
+        </td>
+        <th>發票項目代號</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_VITEM" ng-model="model.VITEM_NO" erp-char-width-input-display="[10,5]" dddw-char-width-label="11">
+        </td>
+    </tr>
+    <tr>
+        <th>借方科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.DR_ACT_NO" erp-char-width-input-display="[20,5]" dddw-char-width-label="11">
+        </td>
+        <th>借方立沖</th>
+        <td>
+            <input type="text" ng-model="model.DR_BCH_NO" erp-char-width-input-display="[24,20]">
+        </td>
+        <th>貸方科目</th>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_ACTNO" ng-model="model.CR_ACT_NO" erp-char-width-input-display="[20,5]" dddw-char-width-label="11">
+        </td>
+        <th>貸方立沖</th>
+        <td>
+            <input type="text" ng-model="model.CR_BCH_NO" erp-char-width-input-display="[24,20]">
+        </td>
+    </tr>
+    <tr>
+        <th>備註</th>
+        <td colspan="7">
+            <textarea rows="4" style="width: 100%;" maxlength="255" ng-model="model.REMK"></textarea>
+        </td>
+    </tr>
+</table>

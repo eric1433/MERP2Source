@@ -1,0 +1,22 @@
+﻿<table>
+    <tr>
+        <td>單別</td>
+        <td>
+            <input type="text" ng-model="condition.VCH_TY" erp-char-width-input-display="[4,5]"><select ng-model="condition.VCH_TY" ng-options="item.Value as item.Display for item in modeldddw.DDDW_VCH_TY_PR" erp-char-width-input-display="[4,19]">
+                <option value=""></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>單號</td>
+        <td>
+            <input type="text" ng-model="condition.VCH_NO" erp-char-width-input-display="[15,25]">
+        </td>
+    </tr>
+    <tr>
+        <td>客戶代號</td>
+        <td>
+            <input type="text" dddwinput dddw-name="DDDW_CS_NO" ng-model="condition.CS_NO" erp-char-width-input-display="[10,8]" dddw-char-width-label="13">
+        </td>
+    </tr>
+</table>
